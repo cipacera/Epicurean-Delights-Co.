@@ -1,0 +1,225 @@
+/* General Reset and Body Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f8f8f8; /* Light background for elegance */
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Header Styles */
+header {
+    background-color: #2C3E50; /* Darker tone for professionalism */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #34495E; /* Slightly lighter dark tone for navigation */
+    padding: 15px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #E74C3C; /* Elegant red hover effect */
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('path_to_hero_image.jpg'); /* Replace with actual hero image */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 50px 20px;
+}
+
+.hero-section h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.hero-section .cta-btn {
+    background-color: #E74C3C; /* Red button for strong CTA */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.hero-section .cta-btn:hover {
+    background-color: #C0392B; /* Darker red hover effect */
+}
+
+/* About Section */
+section.about {
+    background-color: #ECF0F1; /* Light gray for a soft contrast */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section.about h2 {
+    font-size: 2.8rem;
+    color: #2C3E50; /* Dark tone for the section title */
+    margin-bottom: 20px;
+}
+
+section.about p {
+    font-size: 1.2rem;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Products Section */
+section.products {
+    background-color: #F9FAFB; /* Light background for the products section */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section.products h2 {
+    font-size: 2.8rem;
+    color: #2C3E50;
+    margin-bottom: 30px;
+}
+
+.product-card {
+    display: inline-block;
+    width: 300px;
+    background-color: white;
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.product-card h3 {
+    font-size: 1.8rem;
+    color: #E74C3C; /* Red for product titles */
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.product-card .cta-btn {
+    background-color: #E74C3C;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.product-card .cta-btn:hover {
+    background-color: #C0392B; /* Darker red hover effect */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2C3E50; /* Dark footer for contrast */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer a {
+    color: #ECF0F1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #E74C3C; /* Red hover effect for footer links */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+
+    .hero-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .product-card {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .hero-section .cta-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
